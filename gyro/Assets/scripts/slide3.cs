@@ -24,15 +24,17 @@ public class slide3 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Sensitivity = SSlider.GetComponent<Slider>().normalizedValue;
+		Sensitivity = SSlider.GetComponent<Slider>().normalizedValue*1000;
 
 		transform.Translate(Input.acceleration.x * Time.deltaTime * Sensitivity ,Input.acceleration.y * Time.deltaTime * Sensitivity,0);
 		
-		if (Input.touchCount > 0 && 
+		/*if (Input.touchCount > 0 && 
 		    Input.GetTouch(0).phase == TouchPhase.Moved) {
 			
 			Sensitivity = Sensitivity + 5.0f;
-	
-	}
+
+			}
+
+*/
 }
 }
