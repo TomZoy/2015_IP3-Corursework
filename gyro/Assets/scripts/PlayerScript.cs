@@ -35,6 +35,25 @@ public class PlayerScript : MonoBehaviour {
 
 		//InvokeRepeating ("countTime",1.00f,1.00f);
 	}
+
+	public int getSuspicion {
+		get {
+			return suspicion;
+		}
+	}
+
+	public void setSuspicion( int s) {
+		 suspicion = s;
+	}
+
+	public void incSuspicion( int s) {
+			suspicion = suspicion +s;
+	}
+
+	public void decSuspicion( int s) {
+		suspicion = suspicion -s;
+	}
+
 	
 	// Update is called once per frame
 	void Update () {

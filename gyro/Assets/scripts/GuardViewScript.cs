@@ -5,10 +5,12 @@ public class GuardViewScript : MonoBehaviour {
 
 
 	public float entertime;
+	private GameObject player;
 
 	// Use this for initialization
 	void Start () {
 	
+		player = GameObject.Find("Player");
 	}
 	
 	// Update is called once per frame
@@ -34,7 +36,9 @@ public class GuardViewScript : MonoBehaviour {
 			if (Mathf.FloorToInt(Time.time - entertime)> 1 )
 			{
 				Debug.LogWarning ("I see you :PP for 1 sec");
+				player.SendMessage("incSuspicion",1);
 				entertime = Time.time;
+
 			}
 		}
 	}
