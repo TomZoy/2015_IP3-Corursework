@@ -8,6 +8,7 @@ public class GuardScript : MonoBehaviour {
 	private float y;
 
 	private Vector2 rotation;
+	public float rotZ;
 
 	private Vector3 relative;
 	
@@ -23,8 +24,8 @@ public class GuardScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		walk2 ();
-	
+
+		walk ();
 	}
 
 
@@ -36,17 +37,19 @@ public class GuardScript : MonoBehaviour {
 
 
 
-		transform.RotateAround(this.transform.position, Vector3.forward, 20 * Time.deltaTime);
-		
+		transform.RotateAround(this.transform.position, new Vector3 (0,0,1), 20 * Time.deltaTime);
+
+		rotZ = this.transform.rotation.z;
+
 			//leandir = leandir + this.rigidbody2D.velocity;
-		rotation.x = this.transform.rotation.x;
-		rotation.y = this.transform.rotation.y;
+		//rotation.x = this.transform.rotation.x;
+		//rotation.y = this.transform.rotation.y;
 
 
 		//relative = transform.InverseTransformDirection(Vector3.right);
 		//relative = transform.InverseTransformDirection(this.transform.localRotation);
 
-		transform.Translate (relative*10.00f* Time.deltaTime);
+		transform.Translate (Vector3.up*50.00f* Time.deltaTime);
 			
 		//this.rigidbody2D.AddForce (relative*100.0f, ForceMode2D.Force);
 
