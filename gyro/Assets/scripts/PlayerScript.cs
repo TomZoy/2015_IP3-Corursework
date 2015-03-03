@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour {
 	public static int sleepTimeout; 
 	public bool isDrunkOn;
 
-	public int suspicion = 0;
+	public int suspicion = 0; //goes from 0-1
 	public Scrollbar SuspBar;
 	
 	// Use this for initialization
