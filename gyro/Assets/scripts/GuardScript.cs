@@ -4,6 +4,9 @@ using System.Collections;
 public class GuardScript : MonoBehaviour {
 
 	public float moovingSpeed;
+	public bool isMove;
+	public bool isTurn;
+
 	private float x;
 	private float y;
 
@@ -20,6 +23,9 @@ public class GuardScript : MonoBehaviour {
 		rotation.x = 0;
 		rotation.y = 0;
 
+		isMove = true;
+		isTurn = true;
+
 	}
 	
 	// Update is called once per frame
@@ -33,13 +39,15 @@ public class GuardScript : MonoBehaviour {
 	{
 
 		
-		Vector2 leandir = new Vector2 (Random.Range (-1, 1) * 100.0f, Random.Range (-1, 1) * 100.0f) * 10.0f;
+		//Vector2 leandir = new Vector2 (Random.Range (-1, 1) * 100.0f, Random.Range (-1, 1) * 100.0f) * 10.0f;
 
 
+		if (isTurn) {
+			transform.RotateAround (this.transform.position, new Vector3 (0, 0, 1), 20 * Time.deltaTime);
 
-		transform.RotateAround(this.transform.position, new Vector3 (0,0,1), 20 * Time.deltaTime);
+			rotZ = this.transform.rotation.z;
+		}
 
-		rotZ = this.transform.rotation.z;
 
 			//leandir = leandir + this.rigidbody2D.velocity;
 		//rotation.x = this.transform.rotation.x;
@@ -49,8 +57,9 @@ public class GuardScript : MonoBehaviour {
 		//relative = transform.InverseTransformDirection(Vector3.right);
 		//relative = transform.InverseTransformDirection(this.transform.localRotation);
 
-		transform.Translate (Vector3.up*50.00f* Time.deltaTime);
-			
+		if (isMove) {
+			transform.Translate (Vector3.up * 50.00f * Time.deltaTime);
+		}	
 		//this.rigidbody2D.AddForce (relative*100.0f, ForceMode2D.Force);
 
 
