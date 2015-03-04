@@ -23,8 +23,8 @@ public class GuardScript : MonoBehaviour {
 		rotation.x = 0;
 		rotation.y = 0;
 
-		isMove = false;
-		isTurn = false;
+		isMove = true;
+		isTurn = true;
 
 	}
 	

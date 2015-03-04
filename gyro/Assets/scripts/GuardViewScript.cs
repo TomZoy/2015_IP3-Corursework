@@ -20,7 +20,7 @@ public class GuardViewScript : MonoBehaviour {
 	void Update () {
 
 		if ((player.GetComponent<PlayerScript>().suspicion  > 0) && (isPayerInView == false)) {
-			decreaseSuspition ();
+		//	decreaseSuspition ();
 			Debug.LogError ("should dec");
 		}
 	}
