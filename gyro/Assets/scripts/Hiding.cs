@@ -24,6 +24,11 @@ public class Hiding : MonoBehaviour {
 			if ((outerCorssed)&&(innerStaying))
 			{
 				Debug.LogWarning ("you are in the safe zone!");
+				GameObject.Find("Player").GetComponent<PlayerScript>().isDrunkOn = false;
+			}
+			else 
+			{
+				GameObject.Find("Player").GetComponent<PlayerScript>().isDrunkOn = true;
 			}
 
 
