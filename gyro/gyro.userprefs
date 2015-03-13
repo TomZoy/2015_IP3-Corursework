@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PlayerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Hiding.cs">
     <Files>
       <File FileName="Assets\scripts\DataStore.cs" Line="25" Column="2" />
       <File FileName="Assets\scripts\GuardScript.cs" Line="23" Column="17" />
       <File FileName="Assets\scripts\PlayerScript.cs" Line="36" Column="42" />
-      <File FileName="Assets\scripts\GuardViewScript.cs" Line="77" Column="122" />
-      <File FileName="Assets\scripts\FollowingCamera2.cs" Line="94" Column="2" />
+      <File FileName="Assets\scripts\GuardViewScript.cs" Line="50" Column="3" />
+      <File FileName="Assets\scripts\FollowingCamera2.cs" Line="6" Column="1" />
+      <File FileName="Assets\scripts\Hiding.cs" Line="19" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
