@@ -36,7 +36,7 @@ public  class PlayerScript : MonoBehaviour {
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
 
-		this.rigidbody2D.drag = 10.0f;
+		this.rigidbody2D.drag = 5.0f;
 		InvokeRepeating ("drunkMovement",2.00f,1.50f);
 
 		//InvokeRepeating ("countTime",1.00f,1.00f);
