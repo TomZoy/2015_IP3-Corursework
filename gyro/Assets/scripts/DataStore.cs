@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+namespace OTM {
 public static class DataStore {
 
 	public static int gameTime =0;
@@ -20,4 +21,5 @@ public static class DataStore {
 		gameTime++;
 	}
 
+}
 }

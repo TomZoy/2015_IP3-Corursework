@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+namespace OTM {
 public class GuardViewScript : MonoBehaviour {
 
 
@@ -76,4 +78,5 @@ public class GuardViewScript : MonoBehaviour {
 			}
 		}
 	}
+}
 }

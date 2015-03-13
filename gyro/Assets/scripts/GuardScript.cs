@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+namespace OTM {
 public class GuardScript : MonoBehaviour {
 
 	public float moovingSpeed;
@@ -80,4 +81,5 @@ public class GuardScript : MonoBehaviour {
 		
 
 
+}
 }

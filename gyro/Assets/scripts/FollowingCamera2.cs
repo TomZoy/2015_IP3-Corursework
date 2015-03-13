@@ -3,6 +3,7 @@
 using UnityEngine;
 using System.Collections;
 
+namespace OTM {
 public class FollowingCamera2 : MonoBehaviour {
 
 	public Transform target;
@@ -89,6 +90,5 @@ public class FollowingCamera2 : MonoBehaviour {
 
 	}
 
-
-
+}
 }
