@@ -19,11 +19,11 @@ public class GuardViewScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+		void FixedUpdate () {
 
 		if ((player.GetComponent<PlayerScript>().suspicion  > 0) && (isPayerInView == false)) {
-		//	decreaseSuspition ();
-			Debug.LogError ("should dec");
+			decreaseSuspition ();
+			Debug.Log ("susp should dec");
 		}
 	}
 
@@ -53,12 +53,11 @@ public class GuardViewScript : MonoBehaviour {
 	{
 
 
-			if (Mathf.FloorToInt (Time.time - exittime) > 1) {
+			if ((Time.time - exittime) > 1.00f) {
 
 				Debug.LogWarning ("I don't see you :(( decreasing");
-				player.SendMessage ("decSuspicion", 5);
+				player.SendMessage ("decSuspicion", 2);
 				exittime = Time.time;
-			Debug.LogError ("should dec");
 			
 		}
 	}
@@ -69,10 +68,10 @@ public class GuardViewScript : MonoBehaviour {
 			
 			Debug.LogWarning ("I see you :PP ");
 
-			if (Mathf.FloorToInt(Time.time - entertime)> 1 )
+			if ((Time.time - entertime)> 0.1f )
 			{
-				Debug.LogWarning ("I see you :PP for 1 sec");
-				player.SendMessage("incSuspicion",5);
+				Debug.LogWarning ("I see you :PP for 0.1 sec");
+				player.SendMessage("incSuspicion",2);
 				entertime = Time.time;
 
 			}

@@ -53,7 +53,7 @@ public  class PlayerScript : MonoBehaviour {
 	}
 
 	public void decSuspicion( int s) {
-		suspicion = suspicion -s;
+		suspicion = suspicion - s;
 	}
 
 	
