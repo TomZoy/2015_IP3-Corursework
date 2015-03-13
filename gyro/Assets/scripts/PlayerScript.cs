@@ -18,9 +18,13 @@ public  class PlayerScript : MonoBehaviour {
 
 	public int suspicion = 0; //goes from 0-1
 	public Scrollbar SuspBar;
+
+		public Vector3 startPos = new Vector3(0.00f, 0.00f, 0.00f);
 	
 	// Use this for initialization
 	void Start () {
+
+		
 		
 		Sensitivity = 250.0f;
 		//SSlider = GameObject.Find("Slider");
@@ -108,8 +112,6 @@ public  class PlayerScript : MonoBehaviour {
 		}
 	}
 
-	//void AddForce(Vector2 force, ForceMode2D = ForceMode2D.Force);
-
 	void drunkMovement()
 	{
 		if (isDrunkOn) {
@@ -118,7 +120,15 @@ public  class PlayerScript : MonoBehaviour {
 			Debug.LogWarning ("drunk kick");
 		}
 	}
+
+ public void suspFullRestart()
+		{
+
+			suspicion = 0;
+			transform.position = startPos;
+			Debug.Log ("try again =)");
+		}
 	
 
-}
-}
+} //closing class
+} //closing namespace

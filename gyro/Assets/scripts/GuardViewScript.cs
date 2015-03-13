@@ -74,6 +74,7 @@ public class GuardViewScript : MonoBehaviour {
 				player.SendMessage("incSuspicion",2);
 				entertime = Time.time;
 
+					if (player.GetComponent<PlayerScript>().suspicion  >= 100) { player.GetComponent<PlayerScript>().suspFullRestart();}
 			}
 		}
 	}
