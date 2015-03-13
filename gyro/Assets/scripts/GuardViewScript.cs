@@ -73,8 +73,9 @@ public class GuardViewScript : MonoBehaviour {
 				Debug.LogWarning ("I see you :PP for 0.1 sec");
 				player.SendMessage("incSuspicion",2);
 				entertime = Time.time;
+					Handheld.Vibrate();
 
-					if (player.GetComponent<PlayerScript>().suspicion  >= 100) { player.GetComponent<PlayerScript>().suspFullRestart();}
+				if (player.GetComponent<PlayerScript>().suspicion  >= 100) { player.GetComponent<PlayerScript>().suspFullRestart();}
 			}
 		}
 	}
