@@ -26,6 +26,7 @@ public class GuardScript : MonoBehaviour {
 	void Start () {
 		
 		startRotation = transform.localRotation.eulerAngles;
+		rotZ = transform.localRotation.eulerAngles.z;
 		isMove = false;
 		isTurning = false;
 		isOrigDir = true;
