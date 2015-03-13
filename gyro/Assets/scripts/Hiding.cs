@@ -13,10 +13,7 @@ public class Hiding : MonoBehaviour {
 			outerCorssed = !outerCorssed;
 	}
 
-	
-
-
-	// Use this for initialization
+		// Use this for initialization
 	void Start () {
 	
 	}
@@ -26,23 +23,11 @@ public class Hiding : MonoBehaviour {
 
 			if ((outerCorssed)&&(innerStaying))
 			{
-				Debug.LogWarning ("you stepped in the safe zone!");
+				Debug.LogWarning ("you are in the safe zone!");
 			}
 
 
 	}
-
-
-		void OnTriggerExit2D(Collider2D other) {
-			
-			if (other.gameObject.CompareTag("Player")) {
-				
-
-			}
-		}
-
-
-
 
 } //closing class
 } //closing namespace
