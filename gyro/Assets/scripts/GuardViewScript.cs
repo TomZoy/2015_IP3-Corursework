@@ -35,6 +35,15 @@ public class GuardViewScript : MonoBehaviour {
 			isPayerInView = true;
 			entertime = Time.time;
 		}
+		
+			if (other.gameObject.CompareTag("wall")) {
+			
+			
+				GetComponentInParent<GuardScript>().startTurn();
+				Debug.LogWarning ("wall ahhead !!!!");
+
+			}
+		
 	}
 
 

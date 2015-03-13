@@ -86,13 +86,6 @@ public  class PlayerScript : MonoBehaviour {
 		}
 
 
-		/*if (Input.touchCount > 0 && 
-		    Input.GetTouch(0).phase == TouchPhase.Moved) {
-			
-			Sensitivity = Sensitivity + 5.0f;
-
-			}*/
-
 
 	}
 

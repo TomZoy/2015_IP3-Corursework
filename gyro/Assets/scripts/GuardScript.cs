@@ -9,59 +9,106 @@ public class GuardScript : MonoBehaviour {
 	public bool isTurning;
 
 
-	private float x;
-	private float y;
 
-	private Vector2 rotation;
+
+	private Vector3 startRotation;
+	public bool isOrigDir;
 	public float rotZ;
+	
 
-	private Vector3 relative;
 
-	private float startAngle;
+	private Vector3 targetAngle;
 	
 	
 
 
 	// Use this for initialization
 	void Start () {
-		rotation.x = 0;
-		rotation.y = 0;
-
+		
+		startRotation = transform.localRotation.eulerAngles;
 		isMove = false;
 		isTurning = false;
+		isOrigDir = true;
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 
-		//walk ();
-		
-	   if (isTurning) {
-				turnAround();
-
+		if (isMove) 
+			{	
+				walk (); 
 			}
-
+		
+	   if (isTurning) 
+	   		{
+				isMove = false;
+				turnAround();
+			}
+			else 
+			{
+				isMove = true;
+			}
 	}
 
 		public void startTurn ()
 		{
-			startAngle = transform.localRotation.eulerAngles.z;
-			isTurning = true;
+			if (!isTurning)
+			{
+				targetAngle.x = 0;
+				targetAngle.y = 0;
+				targetAngle.z = transform.localRotation.eulerAngles.z + 180f;
+				isTurning = true;
+				isOrigDir = !isOrigDir;
+				
+				Debug.Log("turning");
+			}
 		}
 
 
 
     void turnAround()
 	{
-
-
+			//rotate around-ing
+			transform.RotateAround (this.transform.position, new Vector3 (0, 0, 1), 35 * Time.deltaTime);
+			//lerping
+			//transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetAngle, 0.5f * Time.deltaTime);
 			
-
-			transform.RotateAround (this.transform.position, new Vector3 (0, 0, 1), 20 * Time.deltaTime);	
-			rotZ = transform.localRotation.eulerAngles.z;
+			if ((transform.eulerAngles.z > (targetAngle.z - 1f))&&(transform.eulerAngles.z < (targetAngle.z + 1f)))
+			{
 				
-		    if (rotZ > (startAngle+180.00f)) {isTurning = false; }
+				 
+				if (isOrigDir) 
+				{ 
+					transform.eulerAngles = startRotation; 
+				} 
+				
+				else 
+				{ 
+					transform.eulerAngles = new Vector3(startRotation.x,startRotation.y,(startRotation.z + 180.00f)); 
+				}
+				
+				isTurning = false;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			//{isTurning = false; if (isOrigDir) { this.transform.rotation.z = (startRotation); } else { transform.rotation.z = startRotation + 180f; }}
+			//if (transform.eulerAngles.z > (targetAngle.z - 1.00f)) {isTurning = false; transform.eulerAngles = targetAngle;}
+//			transform.RotateAround (this.transform.position, new Vector3 (0, 0, 1), 20 * Time.deltaTime);	
+//			rotZ = transform.localRotation.eulerAngles.z;
+			
+//			if(rotZ >= 180) {rotZ = rotZ - 180;}		
+//		    if (rotZ > (startAngle+179.00f)) {isTurning = false; }
 
 	}
 
@@ -83,10 +130,10 @@ public class GuardScript : MonoBehaviour {
 		//relative = transform.InverseTransformDirection(Vector3.right);
 		//relative = transform.InverseTransformDirection(this.transform.localRotation);
 
-		if (isMove) {
+		
 			transform.Translate (Vector3.up * 50.00f * Time.deltaTime);
-		}	
-		//this.rigidbody2D.AddForce (relative*100.0f, ForceMode2D.Force);
+			
+
 
 
 	
