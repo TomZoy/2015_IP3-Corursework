@@ -34,6 +34,7 @@ public class GuardViewScript : MonoBehaviour {
 			Debug.LogWarning ("I see you :PP Enter");
 			isPayerInView = true;
 			entertime = Time.time;
+            Handheld.Vibrate();
 		}
 		
 			if (other.gameObject.CompareTag("wall")) {
@@ -72,21 +73,26 @@ public class GuardViewScript : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		
-		if (other.gameObject.CompareTag("Player")) {
-			
-			Debug.LogWarning ("I see you :PP ");
 
-			if ((Time.time - entertime)> 0.1f )
-			{
-				Debug.LogWarning ("I see you :PP for 0.1 sec");
-				player.SendMessage("incSuspicion",2);
-				entertime = Time.time;
-					Handheld.Vibrate();
+        if (player.GetComponent<PlayerScript>().isHiden != true)
+        {
 
-				if (player.GetComponent<PlayerScript>().suspicion  >= 100) { player.GetComponent<PlayerScript>().suspFullRestart();}
-			}
-		}
+            if (other.gameObject.CompareTag("Player"))
+            {
+
+                Debug.LogWarning("I see you :PP ");
+
+                if ((Time.time - entertime) > 0.1f)
+                {
+                    Debug.LogWarning("I see you :PP for 0.1 sec");
+                    player.SendMessage("incSuspicion", 2);
+                    entertime = Time.time;
+
+
+                    if (player.GetComponent<PlayerScript>().suspicion >= 100) { player.GetComponent<PlayerScript>().suspFullRestart(); }
+                }
+            }
+        }
 	}
 }
 }

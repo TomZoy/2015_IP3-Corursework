@@ -117,38 +117,34 @@ namespace OTM
         void Update()
         {
 
-            // testing SuspBar
+            // displaying the SuspBar
             SuspBar.size = suspicion / 100f;
 
 
-            //transform.Translate(Input.acceleration.x * Time.deltaTime * Sensitivity ,Input.acceleration.y * Time.deltaTime * Sensitivity,0);
-            movePlayer(Input.acceleration.x, Input.acceleration.y);
-
-            if (Input.GetKey("w"))
-            {
-                movePlayer(0.0f, 1.0f);
-            }
-            else if (Input.GetKey("s"))
-            {
-                movePlayer(0.0f, -1.0f);
-            }
-            else if (Input.GetKey("a"))
-            {
-                movePlayer(-1.0f, 0.0f);
-            }
-            else if (Input.GetKey("d"))
-            {
-                movePlayer(1.0f, 0.0f);
-            }
+            //calling a method to move the player
+            getPlayerInput();
 
 
-
+            //check if player is hidden
             seeIfHidden();
             
 
 
         }
 
+        void getPlayerInput()
+        {
+            //detect mobile device input
+            movePlayer(Input.acceleration.x, Input.acceleration.y);
+
+            //detect kayboard input
+            if (Input.GetKey("w"))        { movePlayer(0.0f, 1.0f);  }
+            else if (Input.GetKey("s"))   { movePlayer(0.0f, -1.0f); }
+            else if (Input.GetKey("a"))   { movePlayer(-1.0f, 0.0f); }
+            else if (Input.GetKey("d"))   { movePlayer(1.0f, 0.0f);  }
+        }
+
+        //method to actually move the player based on the input
         void movePlayer(float x, float y)
         {
             transform.Translate(x * Time.deltaTime * Sensitivity, y * Time.deltaTime * Sensitivity, 0);
@@ -167,6 +163,8 @@ namespace OTM
             }
         }
 
+        //method to simulate "drunk movement/kick"
+        //invoked from Playerscript/Start periodically
         void drunkMovement()
         {
             if (isDrunkOn)
@@ -177,6 +175,7 @@ namespace OTM
             }
         }
 
+        //method to reset the player upon dead
         public void suspFullRestart()
         {
 
