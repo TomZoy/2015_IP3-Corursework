@@ -31,14 +31,10 @@ namespace OTM
 
 
 
-        public int tmp = 0;
 
         // Use this for initialization
         void Start()
         {
-
-            tmp = 0;
-
 
             Sensitivity = 250.0f;
 
@@ -53,8 +49,8 @@ namespace OTM
             InvokeRepeating("drunkMovement", 2.00f, 1.50f);
 
             hidingBoxesList = GameObject.FindGameObjectsWithTag("hidingB");
-            tmp = hidingBoxesList.Length;
 
+            isDrunkOn = true;
 
         }
 
