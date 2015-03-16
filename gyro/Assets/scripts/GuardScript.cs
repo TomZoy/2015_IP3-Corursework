@@ -5,29 +5,39 @@ namespace OTM {
 public class GuardScript : MonoBehaviour {
 
 	public float moovingSpeed;
-	public bool isMove;
+
+    public enum GuardStates { patrolWalk, patrolTurn };
+
+    public GuardStates GuardState;
+
 	public bool isTurning;
 
 
 
 
 	private Vector3 startRotation;
+    private Vector3 targetAngle;
+
 	public bool isOrigDir;
 	public float rotZ;
 	
 
 
-	private Vector3 targetAngle;
+
 	
 	
 
 
 	// Use this for initialization
 	void Start () {
-		
+
+        GuardState = GuardStates.patrolWalk;
+
+        targetAngle.x = 0;
+        targetAngle.y = 0;
+
 		startRotation = transform.localRotation.eulerAngles;
 		rotZ = transform.localRotation.eulerAngles.z;
-		isMove = false;
 		isTurning = false;
 		isOrigDir = true;
 
@@ -37,32 +47,26 @@ public class GuardScript : MonoBehaviour {
 	void Update () 
 	{
 
-		if (isMove) 
-			{	
-				walk (); 
-			}
-		
-	   if (isTurning) 
-	   		{
-				isMove = false;
-				turnAround();
-			}
-			else 
-			{
-				isMove = true;
-			}
-	}
+        if (GuardState == GuardStates.patrolWalk)
+        {
+            walk();
+        }
+        else if (GuardState == GuardStates.patrolTurn)
+        {
+            turnAround();
+        }
+
+
+}
 
 		public void startTurn ()
 		{
-			if (!isTurning)
+            if (GuardState != GuardStates.patrolTurn)
 			{
-				targetAngle.x = 0;
-				targetAngle.y = 0;
+                GuardState = GuardStates.patrolTurn;
+
 				targetAngle.z = transform.localRotation.eulerAngles.z + 180f;
-				isTurning = true;
 				isOrigDir = !isOrigDir;
-				
 				Debug.Log("turning");
 			}
 		}
@@ -89,8 +93,8 @@ public class GuardScript : MonoBehaviour {
 				{ 
 					transform.eulerAngles = new Vector3(startRotation.x,startRotation.y,(startRotation.z + 180.00f)); 
 				}
-				
-				isTurning = false;
+
+                GuardState = GuardStates.patrolWalk;
 			}
 			
 			
