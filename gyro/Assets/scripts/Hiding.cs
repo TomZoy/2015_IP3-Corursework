@@ -6,6 +6,8 @@ public class Hiding : MonoBehaviour {
 
 		private bool outerCorssed = true;
 		public bool innerStaying = false;
+		
+		public bool isPlayerInside;
 
 
 	public void flipOuterCorssed()
@@ -15,7 +17,8 @@ public class Hiding : MonoBehaviour {
 
 		// Use this for initialization
 	void Start () {
-	
+
+        isPlayerInside = false;
 	}
 	
 	// Update is called once per frame
@@ -23,14 +26,13 @@ public class Hiding : MonoBehaviour {
 
 			if ((outerCorssed)&&(innerStaying))
 			{
-				Debug.LogWarning ("you are in the safe zone!");
-				GameObject.Find("Player").GetComponent<PlayerScript>().isDrunkOn = false;
+                isPlayerInside = true;
 			}
-			else 
+			
+			else
 			{
-				GameObject.Find("Player").GetComponent<PlayerScript>().isDrunkOn = true;
+                isPlayerInside = false;
 			}
-
 
 	}
 
