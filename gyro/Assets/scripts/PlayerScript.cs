@@ -75,7 +75,7 @@ namespace OTM
             while( i <(t))
             {
 
-                if (hidingBoxesList[i].GetComponent<Hiding>().isPlayerInside == true) { isHiden = true; Debug.Log("here"); }
+                if (hidingBoxesList[i].GetComponent<Hiding>().isPlayerInside == true) { isHiden = true;}
                 i++;
  
             }
@@ -85,6 +85,11 @@ namespace OTM
             {
                 Debug.LogWarning("you are in the safe zone!");
                 isDrunkOn = false;
+            }
+            else
+            {
+                Debug.LogWarning("you are out from safe zone!");
+                isDrunkOn = true;
             }
 
         }
