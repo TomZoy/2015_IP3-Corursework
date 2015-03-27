@@ -74,7 +74,7 @@ namespace OTM
         void turnAround()
         {
             //rotate around-ing
-            transform.RotateAround(this.transform.position, new Vector3(0, 0, 1), 35 * Time.deltaTime);
+            transform.RotateAround(this.transform.position, new Vector3(0, 0, 1), 75 * Time.deltaTime);
             //lerping
             //transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetAngle, 0.5f * Time.deltaTime);
 

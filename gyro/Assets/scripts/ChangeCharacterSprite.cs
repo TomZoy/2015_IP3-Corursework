@@ -5,6 +5,7 @@ public class ChangeCharacterSprite : MonoBehaviour {
 
 
     public Sprite[] playerSprites;// = new Sprite[4];
+    public Sprite[] guardSprites;
 
     private float prevX;
     private float prevY;
@@ -12,11 +13,17 @@ public class ChangeCharacterSprite : MonoBehaviour {
 
         void Start()
     {
-        
-        playerSprites = Resources.LoadAll<Sprite>("playerSprites");
-        sensitivity = 1.00f;
+        if (this.tag == "Player")
+        {
+            playerSprites = Resources.LoadAll<Sprite>("playerSprites");
+            sensitivity = 1.00f;
+        }
+        if (this.tag == "Guard")
+        {
+            guardSprites = Resources.LoadAll<Sprite>("guardSprites");
+            sensitivity = 0.00f;
+        }
 
-        //* InvokeRepeating("change", 2.00f, 1.50f);
     }
 	
 	// Update is called once per frame
@@ -46,10 +53,20 @@ public class ChangeCharacterSprite : MonoBehaviour {
 
     void change(int direction)
     {
-        //* Sprite actualSprite = playerSprites[Random.Range(0, playerSprites.Length)];
-        Sprite actualSprite = playerSprites[direction];
-        GetComponent<SpriteRenderer>().sprite = actualSprite;
-    
+        Sprite actualSprite;
+        if (this.tag == "Player")
+        {
+            actualSprite = playerSprites[direction];
+            GetComponent<SpriteRenderer>().sprite = actualSprite;
+        }
+
+        else
+        {
+            actualSprite = guardSprites[direction];
+
+            GetComponentInChildren<SpriteRenderer>().sprite = actualSprite;
+            
+        }
     }
 
 
