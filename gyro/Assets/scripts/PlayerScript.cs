@@ -141,8 +141,8 @@ namespace OTM
             movePlayer(Input.acceleration.x, Input.acceleration.y);
 
             //detect kayboard input
-            if (Input.GetKey("w"))        { movePlayer(0.0f, 1.0f);  }
-            else if (Input.GetKey("s"))   { movePlayer(0.0f, -1.0f); }
+            if (Input.GetKey("w"))        { movePlayer(0.00f, 1.0f);  }
+            else if (Input.GetKey("s"))   { movePlayer(0.00f, -1.0f); }
             else if (Input.GetKey("a"))   { movePlayer(-1.0f, 0.0f); }
             else if (Input.GetKey("d"))   { movePlayer(1.0f, 0.0f);  }
         }
@@ -151,6 +151,7 @@ namespace OTM
         void movePlayer(float x, float y)
         {
             transform.Translate(x * Time.deltaTime * Sensitivity, y * Time.deltaTime * Sensitivity, 0);
+            GetComponent<ChangeCharacterSprite>().detect(x * Sensitivity, y * Sensitivity);
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -172,7 +173,7 @@ namespace OTM
         {
             if (isDrunkOn)
             {
-                Vector2 leandir = new Vector2(Random.Range(-100, 100) , Random.Range(-100, 100) * 100.0f) ;
+                Vector2 leandir = new Vector2(Random.Range(-10, 10) * 1000.0f, Random.Range(-10, 10) * 1000.0f) ;
                 this.rigidbody2D.AddForce(leandir, ForceMode2D.Force);
                 GetComponent<SoundFXScript>().playSoundFXz();
                 Debug.LogWarning("drunk kick");
