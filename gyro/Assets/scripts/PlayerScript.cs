@@ -29,7 +29,6 @@ namespace OTM
 
         public GameObject[] hidingBoxesList;
 
-        private SpriteRenderer renderer;
 
         private Color hidenC = new Color(1.0f, 1.0f, 1.0f, 0.5f);
         private Color visibleC = new Color(1.0f, 1.0f, 1.0f, 1f);

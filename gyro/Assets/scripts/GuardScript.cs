@@ -30,6 +30,8 @@ namespace OTM
             targetAngle.x = 0;
             targetAngle.y = 0;
 
+            moovingSpeed = 50.0f;
+
             startRotation = transform.localRotation.eulerAngles;
             rotZ = transform.localRotation.eulerAngles.z;
             isOrigDir = true;
@@ -96,7 +98,7 @@ namespace OTM
         void walk()
         {
 
-            transform.Translate(Vector3.up * 50.00f * Time.deltaTime);
+            transform.Translate(Vector3.up * moovingSpeed * Time.deltaTime);
 
         }
 
