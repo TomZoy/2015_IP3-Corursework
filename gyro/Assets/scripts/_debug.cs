@@ -4,7 +4,7 @@ using System.Collections;
 namespace OTM {
 public class _debug : MonoBehaviour {
 
-		public GameObject guard;
+		
 
 	// Use this for initialization
 	void Start () {
@@ -12,13 +12,17 @@ public class _debug : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
 	
 	}
 
 		void OnTriggerEnter2D(Collider2D other) {
-
-			guard.GetComponent<GuardScript> ().startTurn ();
+            
+            if (other.gameObject.CompareTag("Player"))
+            {
+                GetComponent<SoundFXScript>().playSoundFXz();
+            }
 		}
 
 }

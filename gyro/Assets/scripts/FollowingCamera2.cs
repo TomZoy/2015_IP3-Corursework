@@ -56,7 +56,7 @@ public class FollowingCamera2 : MonoBehaviour {
 				targetPosition.x = Mathf.Clamp(target.position.x, target.position.x, horizontalMax);
 			}
 
-			targetPosition.z = -100.00f;
+			targetPosition.z = -700.00f;
 			transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 		
 	}

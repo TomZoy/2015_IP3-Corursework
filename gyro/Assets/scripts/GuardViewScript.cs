@@ -40,6 +40,7 @@ namespace OTM
                     Debug.LogWarning("I see you :PP Enter");
                     isPayerInView = true;
                     entertime = Time.time;
+                    this.GetComponentInParent<SoundFXScript>().playSoundFXz();
                     Handheld.Vibrate();
                 }
             }

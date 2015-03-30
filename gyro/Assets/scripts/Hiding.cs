@@ -15,6 +15,7 @@ public class Hiding : MonoBehaviour {
 			outerCorssed = !outerCorssed;
 	}
 
+
 		// Use this for initialization
 	void Start () {
 
@@ -35,6 +36,8 @@ public class Hiding : MonoBehaviour {
 			}
 
 	}
+
+
 
 } //closing class
 } //closing namespace

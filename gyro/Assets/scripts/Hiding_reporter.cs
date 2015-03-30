@@ -13,6 +13,7 @@ public class Hiding_reporter : MonoBehaviour {
 		
 		if ((other.gameObject.CompareTag ("Player")) && (this.gameObject.name == "outer")) {
 			this.GetComponentInParent<Hiding> ().flipOuterCorssed ();
+            
 		}
 
 		if ((other.gameObject.CompareTag("Player")) && (this.gameObject.name=="inner")) {
@@ -23,14 +24,23 @@ public class Hiding_reporter : MonoBehaviour {
 		void OnTriggerEnter2D(Collider2D other) {
 			
 			if ((other.gameObject.CompareTag("Player")) && (this.gameObject.name=="outer")) {
+                
 				this.GetComponentInParent<Hiding>().flipOuterCorssed();
-			}
+
+            }
+
+            if ((other.gameObject.CompareTag("Player")) && (this.gameObject.name == "inner"))
+                {
+                    this.GetComponentInParent<SoundFXScript>().playSoundFXz();
+                }
+			
 		}
 
 		void OnTriggerStay2D(Collider2D other) {
 			
 			if ((other.gameObject.CompareTag("Player")) && (this.gameObject.name=="inner")) {
 				this.GetComponentInParent<Hiding>().innerStaying = true;
+                
 			}
 		}
 

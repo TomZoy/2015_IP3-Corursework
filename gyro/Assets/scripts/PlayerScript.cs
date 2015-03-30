@@ -25,7 +25,7 @@ namespace OTM
         public int suspicion = 0; //goes from 0-1
         public Scrollbar SuspBar;
 
-        public Vector3 startPos = new Vector3(0.00f, 0.00f, 0.00f);
+        public Vector3 startPos; // = new Vector3(0.00f, 0.00f, 0.00f);
 
         public GameObject[] hidingBoxesList;
 
@@ -37,6 +37,8 @@ namespace OTM
         {
 
             Sensitivity = 250.0f;
+
+            startPos = GameObject.Find("startPosMarker").transform.position;
 
             prevCameraTrigger = "";
             obj = GameObject.Find("Main Camera");
@@ -170,8 +172,9 @@ namespace OTM
         {
             if (isDrunkOn)
             {
-                Vector2 leandir = new Vector2(Random.Range(-1, 1) * 100.0f, Random.Range(-1, 1) * 100.0f) * 100.0f;
+                Vector2 leandir = new Vector2(Random.Range(-100, 100) , Random.Range(-100, 100) * 100.0f) ;
                 this.rigidbody2D.AddForce(leandir, ForceMode2D.Force);
+                GetComponent<SoundFXScript>().playSoundFXz();
                 Debug.LogWarning("drunk kick");
             }
         }
@@ -182,6 +185,7 @@ namespace OTM
 
             suspicion = 0;
             transform.position = startPos;
+            GameObject.Find("startPosMarker").GetComponent<SoundFXScript>().playSoundFXz();
             Debug.Log("try again =)");
         }
 

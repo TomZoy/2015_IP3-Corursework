@@ -9,7 +9,11 @@ public class EndGameScript : MonoBehaviour {
 
         if (other.gameObject.CompareTag("Player"))
         {
+            GetComponent<SoundFXScript>().playSoundFXz();
             Debug.Log("Congrats, you made it to the end!");
+            
+            
+            // --------------- scene changing here to main HUB  ---------------------- //
         }
     }
 }
