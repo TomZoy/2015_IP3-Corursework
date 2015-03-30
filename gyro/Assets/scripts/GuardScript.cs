@@ -21,11 +21,6 @@ namespace OTM
 
 
 
-
-
-
-
-
         // Use this for initialization
         void Start()
         {
@@ -64,6 +59,7 @@ namespace OTM
                 GuardState = GuardStates.patrolTurn;
 
                 targetAngle.z = transform.localRotation.eulerAngles.z + 180f;
+                if (targetAngle.z > 360) { targetAngle.z = targetAngle.z - 360; }
                 isOrigDir = !isOrigDir;
                 Debug.Log("turning");
             }
@@ -95,55 +91,14 @@ namespace OTM
                 GuardState = GuardStates.patrolWalk;
             }
 
-
-
-
-
-
-
-
-
-
-
-            //{isTurning = false; if (isOrigDir) { this.transform.rotation.z = (startRotation); } else { transform.rotation.z = startRotation + 180f; }}
-            //if (transform.eulerAngles.z > (targetAngle.z - 1.00f)) {isTurning = false; transform.eulerAngles = targetAngle;}
-            //			transform.RotateAround (this.transform.position, new Vector3 (0, 0, 1), 20 * Time.deltaTime);	
-            //			rotZ = transform.localRotation.eulerAngles.z;
-
-            //			if(rotZ >= 180) {rotZ = rotZ - 180;}		
-            //		    if (rotZ > (startAngle+179.00f)) {isTurning = false; }
-
         }
 
         void walk()
         {
 
-
-            //Vector2 leandir = new Vector2 (Random.Range (-1, 1) * 100.0f, Random.Range (-1, 1) * 100.0f) * 10.0f;
-
-
-
-
-
-            //leandir = leandir + this.rigidbody2D.velocity;
-            //rotation.x = this.transform.rotation.x;
-            //rotation.y = this.transform.rotation.y;
-
-
-            //relative = transform.InverseTransformDirection(Vector3.right);
-            //relative = transform.InverseTransformDirection(this.transform.localRotation);
-
-
             transform.Translate(Vector3.up * 50.00f * Time.deltaTime);
 
-
-
-
-
         }
-
-
-
 
 
     }
