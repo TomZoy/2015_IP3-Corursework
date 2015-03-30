@@ -29,6 +29,10 @@ namespace OTM
 
         public GameObject[] hidingBoxesList;
 
+        private SpriteRenderer renderer;
+
+        private Color hidenC = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+        private Color visibleC = new Color(1.0f, 1.0f, 1.0f, 1f);
 
 
 
@@ -86,10 +90,14 @@ namespace OTM
             if (isHiden)
             {
                 Debug.LogWarning("you are in the safe zone!");
+
+
+                this.GetComponent<SpriteRenderer>().color = hidenC;
                 isDrunkOn = false;
             }
             else
             {
+                this.GetComponent<SpriteRenderer>().color = visibleC; // Set to opaque black
                 Debug.LogWarning("you are out from safe zone!");
                 isDrunkOn = true;
             }
