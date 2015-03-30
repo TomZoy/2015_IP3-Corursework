@@ -6,6 +6,8 @@ using System.Collections;
 namespace OTM {
 public class FollowingCamera2 : MonoBehaviour {
 
+    public bool isRestrictionsOn = false;
+
 	public Transform target;
 	private Vector3 velocity = Vector3.zero;
 	public float smoothTime = 0.15f;
@@ -29,9 +31,10 @@ public class FollowingCamera2 : MonoBehaviour {
 
 	void Update () {
 
-		calcRestrictions ();
+        //not finished yet, needs re-working!!!
+		//calcRestrictions ();
 
-		//if (target) {
+		
 
 
 			Vector3 targetPosition = target.position;
@@ -55,38 +58,48 @@ public class FollowingCamera2 : MonoBehaviour {
 
 			targetPosition.z = -100.00f;
 			transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-		//}
+		
 	}
 
+
+
+    //not finished yet, needs re-working!!!
 	void calcRestrictions()
 	{
-		switch (restriction) {
-		
-		case ("vert_trigger"):
-			verticalMaxEnabled = true;
-			verticalMinEnabled = true;
-			horizontalMaxEnabled = false;
-			horizontalMinEnabled = false;		
-			//Debug.LogWarning ("vert_trigger ACTIVE");
-			break;
-		
 
-		case ("hor_trigger"):
-			horizontalMaxEnabled = true;
-			horizontalMinEnabled = true;
-			verticalMaxEnabled = false;
-			verticalMinEnabled = false;
-			//Debug.LogWarning ("HOR_trigger ACTIVE");
-			break;
+        if (isRestrictionsOn) 
+        {
+            switch (restriction)
+            {
 
-		default:
-			horizontalMaxEnabled = false;
-			horizontalMinEnabled = false;
-			verticalMaxEnabled = false;
-			verticalMinEnabled = false;
-			//Debug.LogWarning ("triggers DISABLED");
-			break;
-	}
+                case ("vert_trigger"):
+                    verticalMaxEnabled = true;
+                    verticalMinEnabled = true;
+                    horizontalMaxEnabled = false;
+                    horizontalMinEnabled = false;
+                    //Debug.LogWarning ("vert_trigger ACTIVE");
+                    break;
+
+
+                case ("hor_trigger"):
+                    horizontalMaxEnabled = true;
+                    horizontalMinEnabled = true;
+                    verticalMaxEnabled = false;
+                    verticalMinEnabled = false;
+                    //Debug.LogWarning ("HOR_trigger ACTIVE");
+                    break;
+
+                /*
+                    default:
+                    horizontalMaxEnabled = false;
+                    horizontalMinEnabled = false;
+                    verticalMaxEnabled = false;
+                    verticalMinEnabled = false;
+                    //Debug.LogWarning ("triggers DISABLED");
+                    break;
+                        */
+            }
+        }
 
 	}
 
