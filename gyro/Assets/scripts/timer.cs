@@ -20,6 +20,6 @@ public class timer : MonoBehaviour {
     void timerMethod()
     {
         time++;
-        GameObject.Find("sTime").GetComponent<Text>().text = time.ToString();
+        GameObject.Find("sTime").GetComponent<Text>().text = "" + time.ToString();
     }
 }
