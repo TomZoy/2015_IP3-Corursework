@@ -57,6 +57,7 @@
      <Compile Include="Assets\scripts\PlayerScript.cs" />
      <Compile Include="Assets\scripts\SoundFXScript.cs" />
      <Compile Include="Assets\scripts\_debug.cs" />
+     <Compile Include="Assets\scripts\timer.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />

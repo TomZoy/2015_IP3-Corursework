@@ -95,7 +95,7 @@ namespace OTM
                     if ((Time.time - entertime) > 0.1f)
                     {
                         Debug.LogWarning("I see you :PP for 0.1 sec");
-                        player.SendMessage("incSuspicion", 6);
+                        player.SendMessage("incSuspicion", 12);
                         entertime = Time.time;
 
 
