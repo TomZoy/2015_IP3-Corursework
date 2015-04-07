@@ -66,22 +66,39 @@ namespace OTM
             float Xdiff = Mathf.Abs(prevX - transform.position.x);
             float Ydiff = Mathf.Abs(prevY - transform.position.y);
 
-            anim.SetInteger("guardDir", 2);
+            anim.SetInteger("guardDir", -1);
 
             if (Xdiff > Ydiff) //the movement on the X is bigger than on the Y
             {
-                if ((prevX < transform.position.x) ) //travelin to the right
-                    anim.SetInteger("guardDir", 0);
-                if ((prevX > transform.position.x) ) //traveling to the left
+                if ((prevX < transform.position.x) && (Xdiff > sensitivity)) //travelin to the right
+                {
                     anim.SetInteger("guardDir", 2);
+                    transform.GetChild(0).transform.localEulerAngles = new Vector3(0, 0, 90.00f);
+                    
+                }
+                if ((prevX > transform.position.x) && (Xdiff > sensitivity)) //traveling to the left
+                {
+                    transform.GetChild(0).transform.localEulerAngles = new Vector3(0, 0,270.00f);
+                    anim.SetInteger("guardDir", 0);
+                }
             }
             else
             {
-                if ((prevY < transform.position.y)) //travelin to the right
+                if ((prevY < transform.position.y) && (Ydiff > sensitivity)) //travelin to the right
+                {
                     anim.SetInteger("guardDir", 1);
-                if ((prevY > transform.position.y) ) //traveling to the left
+                    //this.GetComponentInChildren<GuardSpriteManager>().refresh(0.00f);
+                    transform.GetChild(0).transform.eulerAngles = new Vector3(0, 0, 0.00f);
+                }
+                if ((prevY > transform.position.y) && (Ydiff > sensitivity)) //traveling to the left
+                {       
                     anim.SetInteger("guardDir", 3);
+                    transform.GetChild(0).transform.eulerAngles = new Vector3(0, 0, 0.00f);
+                }
             }
+
+            prevX = transform.position.x;
+            prevY = transform.position.y;
         }
 
         //overloaded version for Player to call
