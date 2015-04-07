@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 96197306fd10af64cb46c661352ef6a9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Guard2 SpriteSheet_0
+    21300002: Guard2 SpriteSheet_1
+    21300004: Guard2 SpriteSheet_2
+    21300006: Guard2 SpriteSheet_3
+    21300008: Guard2 SpriteSheet_4
+    21300010: Guard2 SpriteSheet_5
+    21300012: Guard2 SpriteSheet_6
+    21300014: Guard2 SpriteSheet_7
+    21300016: Guard2 SpriteSheet_8
+    21300018: Guard2 SpriteSheet_9
+    21300020: Guard2 SpriteSheet_10
+    21300022: Guard2 SpriteSheet_11
+    21300024: Guard2 SpriteSheet_12
+    21300026: Guard2 SpriteSheet_13
+    21300028: Guard2 SpriteSheet_14
+    21300030: Guard2 SpriteSheet_15
+    21300032: Guard2 SpriteSheet_16
+    21300034: Guard2 SpriteSheet_17
+    21300036: Guard2 SpriteSheet_18
+    21300038: Guard2 SpriteSheet_19
+    21300040: Guard2 SpriteSheet_20
+    21300042: Guard2 SpriteSheet_21
+    21300044: Guard2 SpriteSheet_22
+    21300046: Guard2 SpriteSheet_23
+    21300048: Guard2 SpriteSheet_24
+    21300050: Guard2 SpriteSheet_25
+    21300052: Guard2 SpriteSheet_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 8
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Guard2 SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1567
+        width: 435
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1567
+        width: 432
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1567
+        width: 432
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1567
+        width: 435
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 1567
+        width: 436
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 766
+        width: 387
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 766
+        width: 411
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 766
+        width: 390
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 766
+        width: 411
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 766
+        width: 388
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 63
+        width: 195
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 57
+        width: 172
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 63
+        width: 195
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 57
+        width: 171
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 63
+        width: 195
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 57
+        width: 172
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 57
+        width: 171
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 63
+        width: 196
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 57
+        width: 171
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 63
+        width: 195
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 57
+        width: 171
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 63
+        width: 196
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guard2 SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
