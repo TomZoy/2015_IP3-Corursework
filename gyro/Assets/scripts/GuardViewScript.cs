@@ -12,6 +12,7 @@ namespace OTM
         private bool isPayerInView;
         private GameObject player;
 
+
         // Use this for initialization
         void Start()
         {
@@ -42,6 +43,7 @@ namespace OTM
                     entertime = Time.time;
                     this.GetComponentInParent<SoundFXScript>().playSoundFXz();
                     Handheld.Vibrate();
+                    this.GetComponent<SpriteRenderer>().color = redC;
                 }
             }
 
@@ -64,6 +66,7 @@ namespace OTM
 
                 Debug.LogWarning("I see you :(( exit");
                 isPayerInView = false;
+                this.GetComponent<SpriteRenderer>().color = greenC;
                 exittime = Time.time;
 
             }
