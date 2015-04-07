@@ -19,6 +19,11 @@ namespace OTM
         public bool isOrigDir;
         public float rotZ;
 
+        private float prevX;
+        private float prevY;
+
+        Animator anim;
+
 
 
         // Use this for initialization
@@ -36,6 +41,7 @@ namespace OTM
             rotZ = transform.localRotation.eulerAngles.z;
             isOrigDir = true;
 
+            anim = GetComponentInChildren<Animator>();
         }
 
         // Update is called once per frame
@@ -51,6 +57,7 @@ namespace OTM
                 turnAround();
             }
 
+           
 
         }
 
@@ -101,6 +108,8 @@ namespace OTM
             transform.Translate(Vector3.up * moovingSpeed * Time.deltaTime);
 
         }
+
+
 
 
     }

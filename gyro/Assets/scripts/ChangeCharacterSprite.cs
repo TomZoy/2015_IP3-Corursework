@@ -14,6 +14,8 @@ namespace OTM
         private float prevY;
         private float sensitivity;
 
+        Animator anim;
+
         void Start()
         {
             if (this.tag == "Player")
@@ -25,7 +27,10 @@ namespace OTM
             {
                 guardSprites = Resources.LoadAll<Sprite>("guardSprites");
                 sensitivity = 0.00f;
+                anim = GetComponentInChildren<Animator>();
             }
+
+
 
         }
 
@@ -61,23 +66,22 @@ namespace OTM
             float Xdiff = Mathf.Abs(prevX - transform.position.x);
             float Ydiff = Mathf.Abs(prevY - transform.position.y);
 
+            anim.SetInteger("guardDir", 2);
+
             if (Xdiff > Ydiff) //the movement on the X is bigger than on the Y
             {
-                if ((prevX < transform.position.x) && (Xdiff > sensitivity)) //travelin to the right
-                    change(3);
-                if ((prevX > transform.position.x) && (Xdiff > sensitivity)) //traveling to the left
-                    change(2);
+                if ((prevX < transform.position.x) ) //travelin to the right
+                    anim.SetInteger("guardDir", 0);
+                if ((prevX > transform.position.x) ) //traveling to the left
+                    anim.SetInteger("guardDir", 2);
             }
             else
             {
-                if ((prevY < transform.position.y) && (Ydiff > sensitivity)) //travelin to the right
-                    change(1);
-                if ((prevY > transform.position.y) && (Ydiff > sensitivity)) //traveling to the left
-                    change(0);
+                if ((prevY < transform.position.y)) //travelin to the right
+                    anim.SetInteger("guardDir", 1);
+                if ((prevY > transform.position.y) ) //traveling to the left
+                    anim.SetInteger("guardDir", 3);
             }
-
-            prevX = transform.position.x;
-            prevY = transform.position.y;
         }
 
         //overloaded version for Player to call
