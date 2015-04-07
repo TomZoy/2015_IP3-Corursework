@@ -22,8 +22,7 @@ namespace OTM
         private float prevX;
         private float prevY;
 
-        Animator anim;
-
+  
 
 
         // Use this for initialization
@@ -41,7 +40,7 @@ namespace OTM
             rotZ = transform.localRotation.eulerAngles.z;
             isOrigDir = true;
 
-            anim = GetComponentInChildren<Animator>();
+
         }
 
         // Update is called once per frame
