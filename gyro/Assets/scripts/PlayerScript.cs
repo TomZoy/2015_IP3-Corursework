@@ -16,8 +16,11 @@ namespace OTM
         private GameObject obj;
         public static int sleepTimeout;
         public bool isDrunkOn;
+        public int Drunklevel; //the smaller the number the more drunk she is. 0 = 100%
+
         private float sensitivity;
         public bool isHiden;
+
 
         Animator anim;
 
@@ -51,13 +54,15 @@ namespace OTM
 
 
             this.rigidbody2D.drag = 5.0f;
-            InvokeRepeating("drunkMovement", 2.00f, 1.50f);
+            InvokeRepeating("drunkMovement", 0.50f, 0.50f);
 
             hidingBoxesList = GameObject.FindGameObjectsWithTag("hidingB");
 
             isDrunkOn = true;
 
             anim = GetComponent<Animator>();
+
+            Drunklevel = 5;
 
         }
 
@@ -182,10 +187,17 @@ namespace OTM
         {
             if (isDrunkOn)
             {
-                Vector2 leandir = new Vector2(Random.Range(-10, 10) * 1000.0f, Random.Range(-10, 10) * 1000.0f) ;
-                this.rigidbody2D.AddForce(leandir, ForceMode2D.Force);
-                GetComponent<SoundFXScript>().playSoundFXz();
-                Debug.LogWarning("drunk kick");
+                if (Random.Range(0, Drunklevel) == 0)
+                {
+                    float f = 1000.0f;
+                    if (Random.Range(0, 2) == 0) { f = -1000.0f; }
+
+
+                    Vector2 leandir = new Vector2( Random.Range(5, 11) * f, Random.Range(5, 11) * f);
+                    this.rigidbody2D.AddForce(leandir, ForceMode2D.Force);
+                    GetComponent<SoundFXScript>().playSoundFXz();
+                    Debug.LogWarning("drunk kick");
+                }
             }
         }
 
