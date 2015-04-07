@@ -12,6 +12,8 @@ namespace OTM
         private bool isPayerInView;
         private GameObject player;
 
+        private Color redC = new Color((226.0f / 255), (90.0f/255), (90.0f/255), 1.00f);
+        private Color greenC = new Color((150.0f/255), (228.0f/255), (102.0f/255), 1.00f);
 
         // Use this for initialization
         void Start()
