@@ -16,10 +16,10 @@ namespace OTM
         private GameObject obj;
         public static int sleepTimeout;
         public bool isDrunkOn;
-
+        private float sensitivity;
         public bool isHiden;
 
-
+        Animator anim;
 
 
         public int suspicion = 0; //goes from 0-1
@@ -56,6 +56,8 @@ namespace OTM
             hidingBoxesList = GameObject.FindGameObjectsWithTag("hidingB");
 
             isDrunkOn = true;
+
+            anim = GetComponent<Animator>();
 
         }
 
@@ -158,7 +160,7 @@ namespace OTM
         void movePlayer(float x, float y)
         {
             transform.Translate(x * Time.deltaTime * Sensitivity, y * Time.deltaTime * Sensitivity, 0);
-            GetComponent<ChangeCharacterSprite>().detect(x * Sensitivity, y * Sensitivity);
+            detect(x * Sensitivity, y * Sensitivity);
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -196,6 +198,33 @@ namespace OTM
             GameObject.Find("startPosMarker").GetComponent<SoundFXScript>().playSoundFXz();
             Debug.Log("try again =)");
         }
+
+
+
+
+        //overloaded version for Player to call, used to control the Animator
+        public void detect(float x, float y)
+        {
+            anim.SetInteger("direction", -1);
+
+            if (Mathf.Abs(x) > Mathf.Abs(y)) //the movement on the X is bigger than on the Y
+            {
+                if ((x > 0) && (Mathf.Abs(x) > sensitivity)) //travelin to the right
+                    anim.SetInteger("direction",2);
+
+                if ((x < 0) && (Mathf.Abs(x) > sensitivity)) //traveling to the left
+                    anim.SetInteger("direction", 0);
+            }
+            else
+            {
+                if ((y > 0) && (Mathf.Abs(y) > sensitivity)) //travelin to the right
+                    anim.SetInteger("direction", 1);
+                if ((y < 0) && (Mathf.Abs(y) > sensitivity)) //traveling to the left
+                    anim.SetInteger("direction", 3);
+            }
+
+        }
+
 
 
     } //closing class

@@ -88,6 +88,7 @@ namespace OTM
             {
                 if ((x > 0) && (Mathf.Abs(x) > sensitivity)) //travelin to the right
                     change(3);
+
                 if ((x < 0 ) && (Mathf.Abs(x) > sensitivity)) //traveling to the left
                     change(2);
             }
