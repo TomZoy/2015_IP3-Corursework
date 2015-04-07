@@ -7,7 +7,6 @@ namespace OTM
     public class CoinScript : MonoBehaviour
     {
 
-        private GameObject self;
 
         private GameObject timer;
         public int coinvalue;
@@ -15,8 +14,7 @@ namespace OTM
         // Use this for initialization
         void Start()
         {
-            self = this.gameObject;
-            timer = GameObject.Find("sTime");
+             timer = GameObject.Find("sTime");
             coinvalue = 200;
         }
 

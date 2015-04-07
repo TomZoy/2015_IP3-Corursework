@@ -43,6 +43,7 @@ namespace OTM
         {
 
             Sensitivity = 250.0f;
+            sensitivity = 0.10f;
 
             startPos = GameObject.Find("startPosMarker").transform.position;
 
@@ -51,6 +52,9 @@ namespace OTM
 
             // Disable screen dimming
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
+            // Fix orientation to portrait
+            Screen.orientation = ScreenOrientation.Portrait;
 
 
             this.rigidbody2D.drag = 5.0f;
