@@ -21,4 +21,9 @@ public class SoundFXScript : MonoBehaviour {
         audio.Play();
 
     }
+
+
+
+
+
 }

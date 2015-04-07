@@ -7,6 +7,7 @@ namespace OTM
     public class CoinScript : MonoBehaviour
     {
 
+        private GameObject self;
 
         private GameObject timer;
         public int coinvalue;
@@ -14,6 +15,7 @@ namespace OTM
         // Use this for initialization
         void Start()
         {
+            self = this.gameObject;
             timer = GameObject.Find("sTime");
             coinvalue = 200;
         }
@@ -32,8 +34,12 @@ namespace OTM
             if (other.gameObject.CompareTag("Player"))
             {
                 timer.GetComponent<timer>().addtime(coinvalue);
+                GetComponent<SoundFXScript>().playSoundFXz();
+                Destroy(GetComponent<SpriteRenderer>());
 
-                gameObject.SetActive(false);
+                Destroy(this.gameObject,1);
+                // gameObject.SetActive(false);
+               
             }
 
         }
