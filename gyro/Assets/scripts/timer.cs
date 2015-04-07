@@ -27,7 +27,7 @@ namespace OTM
         void timerMethod()
         {
             time--;
-            GameObject.Find("sTime").GetComponent<Text>().text = "" + time.ToString();
+            GameObject.Find("sTime").GetComponent<Text>().text = "Time left " + time.ToString();
 
             if (time < 0) { timeUp(); }
         }
@@ -38,5 +38,11 @@ namespace OTM
             player.GetComponent<PlayerScript>().suspFullRestart();
 
         }
+
+       public void addtime(int t)
+        {
+            time = time + t;
+        }
+
     }
 }
