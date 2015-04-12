@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-04-08T23:46:12" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM' -  (Package)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::anim' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::change' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::change::direction' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::ChangeCharacterSprite' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::detect' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::detect::x' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::detect::y' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::FixedUpdate' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::guardSprites' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::playerSprites' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::prevX' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::prevY' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::sensitivity' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::ChangeCharacterSprite::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::CoinScript' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::coinvalue' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::OnTriggerEnter2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::OnTriggerEnter2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::timer' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::CoinScript::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::DataStore' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::DataStore::countTime' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::DataStore::gameTime' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::DataStore::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::DataStore::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::EndGameScript' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::EndGameScript::EndGameScript' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::EndGameScript::OnTriggerEnter2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::EndGameScript::OnTriggerEnter2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::calcRestrictions' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::FollowingCamera2' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::horizontalMax' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::horizontalMaxEnabled' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::horizontalMin' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::horizontalMinEnabled' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::isRestrictionsOn' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::restriction' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::setRestriction' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::setRestriction::a' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::smoothTime' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::target' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::velocity' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::verticalMax' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::verticalMaxEnabled' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::verticalMin' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::FollowingCamera2::verticalMinEnabled' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::GuardScript' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::GuardState' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::isOrigDir' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::moovingSpeed' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::prevX' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::prevY' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::rotZ' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::startRotation' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::startTurn' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::targetAngle' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::turnAround' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardScript::walk' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardStates' -  (Enumeration)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardStates::patrolTurn' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardStates::patrolWalk' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::decreaseSuspition' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::entertime' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::exittime' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::FixedUpdate' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::greenC' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::GuardViewScript' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::isPayerInView' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::OnTriggerEnter2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::OnTriggerEnter2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::OnTriggerExit2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::OnTriggerExit2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::OnTriggerStay2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::OnTriggerStay2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::player' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::redC' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::GuardViewScript::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::flipOuterCorssed' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::Hiding' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::innerStaying' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::isPlayerInside' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::outerCorssed' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::Hiding_reporter' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::OnTriggerEnter2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::OnTriggerEnter2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::OnTriggerExit2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::OnTriggerExit2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::OnTriggerStay2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::OnTriggerStay2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::Hiding_reporter::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::anim' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::decSuspicion' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::decSuspicion::s' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::detect' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::detect::x' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::detect::y' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::Drunklevel' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::drunkMovement' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::getPlayerInput' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::getSuspicion' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::hidenC' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::hidingBoxesList' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::incSuspicion' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::incSuspicion::s' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::isDrunkOn' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::isHiden' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::movePlayer' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::movePlayer::x' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::movePlayer::y' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::obj' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::OnTriggerEnter2D' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::OnTriggerEnter2D::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::PlayerScript' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::prevCameraTrigger' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::seeIfHidden' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::sensitivity' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::Sensitivity' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::setSuspicion' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::setSuspicion::s' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::sleepTimeout' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::startPos' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::SuspBar' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::suspFullRestart' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::suspicion' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::PlayerScript::visibleC' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::SoundFXScript' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::SoundFXScript::playSoundFXz' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::SoundFXScript::SoundFXScript' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::SoundFXScript::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::SoundFXScript::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer' -  (Class)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::addtime' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::addtime::t' -  (Parameter)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::player' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::Start' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::time' -  (Property)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::timer' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::timerMethod' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::timeUp' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::OTM::timer::Update' -  (Operation)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Single' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine' -  (Package)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::Animator' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::Collider2D' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::Color' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::GameObject' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::MonoBehaviour' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::Sprite' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::Transform' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::UI' -  (Package)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::UI::Scrollbar' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::UnityEngine::Vector3' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::EndGameScript to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::FollowingCamera2 to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::GuardScript to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::GuardViewScript to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::Hiding to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::Hiding_reporter to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::PlayerScript to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::SoundFXScript to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::timer to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::ChangeCharacterSprite to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::OTM::CoinScript to ModelingProject1::UnityEngine::MonoBehaviour (Generalization)" />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="High" Text="(13) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="High" Text="(10) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-08T23:46:17" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

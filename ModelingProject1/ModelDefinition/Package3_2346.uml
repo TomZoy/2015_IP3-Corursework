@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="32dd5a95-184b-4e80-9f1b-d77958e43e30"
+  name="UI"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="51441331-9c71-4a1f-8195-0de8494d6bd1"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DUnityEngine.UI"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f7ef6512-2fb3-4db7-96ec-13db8324906b"
+        name="Scrollbar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="24f44c7b-f79d-45e1-8964-f71fcd7059d6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FUnity%2FEditor%2FData%2FUnityExtensions%2FUnity%2FGUISystem%2F4.6.2%2FUnityEngine.UI.dll&quot; Namespace%3DUnityEngine.UI Type%3DScrollbar"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a1d3cfd7-038a-492e-8a63-09254582e55a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a124fc9-77af-4a2c-ba51-95662d103059">
+                <propertyInstance
+                  Id="e17a2978-825e-4e3d-8bad-ab0197667cfe"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc9fd8f2-8b01-42c5-a7e4-30a505b3c8c5">
+                <propertyInstance
+                  Id="a91d0e8b-1680-4d7a-861a-232380d8128a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b743c927-b6c5-4af7-b188-4682403a6eed">
+                <propertyInstance
+                  Id="014f1187-fdb7-4cb6-82f0-bfbba10c2bc1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bbd56850-6a11-4eb3-bc19-54f1dfe4fbab">
+                <propertyInstance
+                  Id="c4e13275-f4d0-44c3-914b-23c0f283405c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4cd1dbc2-0a18-4851-927a-0157f24056cd">
+                <propertyInstance
+                  Id="354c7143-7919-4f70-97c0-168a187ccefd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
